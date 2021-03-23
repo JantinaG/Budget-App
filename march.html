@@ -4,12 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/src/style.css" />
+    <!-- Fontawesome icons -->
+    <script
+      src="https://kit.fontawesome.com/190163acdf.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
@@ -18,9 +27,10 @@
     <title>📅 March '21</title>
   </head>
   <body>
-    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
+    <!-- NavBar -->
+    <nav class="navbar sticky-top navbar-expand-md">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Budget</a>
+        <a class="navbar-brand" href="index.html">MyBudget</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -30,7 +40,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"> <i class="fas fa-bars"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
@@ -78,8 +88,11 @@
         </div>
       </div>
     </nav>
-    <h1 class="text-center">March 2021</h1>
-    <br />
+    <!-- Header -->
+    <div class="header-old shadow">
+      <h1 class="text-center">March 2021</h1>
+    </div>
+    <!-- Content -->
     <div class="container">
       <div class="row">
         <div class="col-8">
@@ -155,7 +168,7 @@
         <div class="col-8">
           <h4>Left (A-B-C)</h4>
         </div>
-        <div class="col-4 border-top border-dark border-3">
+        <div class="col-4 border-top border-3">
           <h4>€ 76.00</h4>
         </div>
       </div>

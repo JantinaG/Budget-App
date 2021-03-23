@@ -1,0 +1,89 @@
+:root {
+  --background: #ffffff;
+  --dark-primary: #388e3c;
+  --light-primary: #c8e6c9;
+  --primary: #4caf50;
+  --accent: #ffeb3b;
+  --primary-text: #212121;
+  --secondary-text: #757575;
+  --divider: #bdbdbd;
+}
+
+body {
+  background: var(--background) !important;
+}
+/* Navbar styling */
+.navbar {
+  background: var(--dark-primary);
+}
+
+.navbar-brand {
+  font-size: 40px !important;
+}
+
+a,
+.dropdown-item {
+  color: var(--background);
+}
+
+a:hover {
+  color: var(--light-primary);
+}
+
+.disabled {
+  color: var(--primary) !important;
+}
+
+.dropdown-menu {
+  background: var(--dark-primary);
+  border: none !important;
+}
+
+.dropdown-item:hover {
+  color: var(--dark-primary) !important;
+  background: var(--background) !important;
+}
+
+.navbar-toggler {
+  padding-bottom: 0 !important;
+}
+
+.fa-bars {
+  color: var(--light-primary);
+}
+
+/* Header styling */
+.header {
+  background: var(--primary);
+  padding-top: 40px;
+  padding-bottom: 1px;
+  margin-bottom: 30px;
+}
+
+.header-old {
+  background: var(--primary);
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: var(--background) !important;
+  font-size: 50px;
+}
+
+h5 {
+  color: var(--light-primary) !important;
+}
+
+/* Content styling */
+h4 {
+  color: var(--secondary-text) !important;
+}
+
+p {
+  color: var(--light-primary);
+}
+
+ul {
+  color: var(--primary-text);
+}
