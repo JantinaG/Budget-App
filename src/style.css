@@ -87,3 +87,26 @@ p {
 ul {
   color: var(--primary-text);
 }
+
+/* Footer Styling */
+footer {
+  background: var(--dark-primary);
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer button {
+  background: transparent !important;
+  color: var(--background) !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.currency {
+  border: 3px solid var(--primary) !important;
+  border-radius: 4px !important;
+}
