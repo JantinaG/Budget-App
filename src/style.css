@@ -88,6 +88,11 @@ ul {
   color: var(--primary-text);
 }
 
+.content ul li {
+  color: var(--primary-text);
+  list-style-image: url("/images/euro-symbol.png");
+}
+
 /* Footer Styling */
 footer {
   background: var(--dark-primary);
