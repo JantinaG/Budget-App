@@ -24,6 +24,8 @@
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
     ></script>
+    <!-- JavaScript -->
+    <script src="/src/script.js"></script>
     <title>💸 Budget App</title>
   </head>
   <body>
@@ -90,9 +92,49 @@
     </nav>
     <!-- Header -->
     <div class="header shadow">
-      <h1 class="text-center">April 2021</h1>
+      <h1 id="monthYear" class="text-center">April 2021</h1>
       <h5 class="text-center">This month's quote:</h5>
-      <p class="text-center">You do you, boo!</p>
+      <p id="quote" class="text-center">You do you, boo!</p>
+      <i
+        type="button"
+        class="fas fa-pencil-alt btn d-flex justify-content-center pb-2"
+        onclick="editHeader()"
+      ></i>
+      <span class="">
+        <form
+          id="headerForm"
+          class="header-form rounded mb-2"
+          style="display: none"
+        >
+          <input
+            id="month"
+            type="text"
+            class="form-control"
+            autocomplete="off"
+            placeholder="Month"
+          />
+          <input
+            id="year"
+            type="text"
+            class="form-control"
+            autocomplete="off"
+            placeholder="Year"
+          />
+          <input
+            id="quoteForm"
+            type="text"
+            class="form-control"
+            autocomplete="off"
+            placeholder="Quote"
+          />
+
+          <i
+            type="button"
+            class="fas fa-angle-double-right d-flex justify-content-end"
+            onclick="displayHeader()"
+          ></i>
+        </form>
+      </span>
     </div>
     <!-- Content -->
     <div class="container content">
@@ -200,9 +242,14 @@
           <div class="col-8">
             <p class="d-inline">
               Created by
-              <a href="https://github.com/JantinaG">Jantina Eefting</a>.
-              <a href="https://github.com/JantinaG/budget-app">Opensourced</a>
-              and hosted on <a href="https://www.netlify.com/">Netlify</a>.
+              <a href="https://github.com/JantinaG" target="_blank"
+                >Jantina Eefting</a
+              >.
+              <a href="https://github.com/JantinaG/budget-app" target="_blank"
+                >Opensourced</a
+              >
+              and hosted on
+              <a href="https://www.netlify.com/" target="_blank">Netlify</a>.
             </p>
           </div>
           <div class="col-4">
@@ -254,10 +301,14 @@
               <a
                 href="https://www.flaticon.com/authors/dave-gandy"
                 title="Dave Gandy"
+                target="_blank"
                 >Dave Gandy</a
               >
               from
-              <a href="https://www.flaticon.com/" title="Flaticon"
+              <a
+                href="https://www.flaticon.com/"
+                title="Flaticon"
+                target="_blank"
                 >www.flaticon.com</a
               >
             </p>
@@ -265,5 +316,6 @@
         </div>
       </div>
     </footer>
+    <script src="/src/script.js"></script>
   </body>
 </html>
