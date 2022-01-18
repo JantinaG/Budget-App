@@ -94,10 +94,28 @@ h4 {
 
 ul {
   color: var(--primary-text);
+  list-style: none;
+  list-style-position: left;
+  /*padding: ;*/
 }
 
-.content ul li {
+li {
+  padding-left: 1.3em;
   color: var(--primary-text);
+}
+
+.content ul li:before {
+  content: "\f153"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.3em; /* same as padding-left set on li */
+
+  text-align: left;
+}
+
+/*.content ul li {
+  
   list-style-image: url("/images/euro-symbol.png");
 }
 

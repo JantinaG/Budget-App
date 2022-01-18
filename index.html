@@ -145,7 +145,7 @@
         <div class="col-3 text-end">
           <ul>
             <li>
-              <h4>900.00</h4>
+              <h4 id="aTotal">900.00</h4>
             </li>
           </ul>
         </div>
@@ -164,6 +164,7 @@
           </ul>
         </div>
       </div>
+
       <div class="row">
         <div class="col-9">
           <h4>B: Investing and Saving</h4>
@@ -171,7 +172,7 @@
         <div class="col-3 text-end">
           <ul>
             <li>
-              <h4>180.00</h4>
+              <h4 id="bTotal">180.00</h4>
             </li>
           </ul>
         </div>
@@ -194,12 +195,36 @@
       </div>
       <div class="row">
         <div class="col-9">
-          <h4>C: Expenses</h4>
+          <h4>C: Debt</h4>
         </div>
         <div class="col-3 text-end">
           <ul>
             <li>
-              <h4>314.00</h4>
+              <h4 id="cTotal">200.00</h4>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-9">
+          <ol>
+            <li>Studyloan</li>
+          </ol>
+        </div>
+        <div class="col-3 text-end">
+          <ul>
+            <li>200.00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-9">
+          <h4>D: Expenses</h4>
+        </div>
+        <div class="col-3 text-end">
+          <ul>
+            <li>
+              <h4 id="dTotal">314.00</h4>
             </li>
           </ul>
         </div>
@@ -223,13 +248,16 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-9">
-          <h4>Left (A-B-C)</h4>
+        <div class="col-7">
+          <h4>Left (A+B-C-D)</h4>
+        </div>
+        <div class="col-2">
+          <button type="submit" onclick="finalCalculation">Calculate</button>
         </div>
         <div class="col-3 text-end border-top border-3">
           <ul>
             <li>
-              <h4>60.00</h4>
+              <h4 id="leftTotal">60.00</h4>
             </li>
           </ul>
         </div>
