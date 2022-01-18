@@ -14,3 +14,15 @@ function displayHeader() {
   quote.innerHTML = `${quoteForm.value}`;
   document.getElementById("headerForm").style.display = "none";
 }
+
+// Final calculation
+function finalCalculation() {
+  let aTotal = document.querySelector("#aTotal");
+  let bTotal = document.querySelector("#bTotal");
+  let cTotal = document.querySelector("#cTotal");
+  let dTotal = document.querySelector("#dTotal");
+  let leftAmount = document.querySelector("#leftTotal");
+  console.log(aTotal + bTotal - cTotal - dTotal);
+
+  //  leftAmount.innerHTML = `${}`;
+}
