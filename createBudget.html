@@ -133,129 +133,52 @@
       </span>
     </div>
     <!-- Content -->
-    <div class="container content"> 
+    <div class="container">
       <div class="row">
         <div class="col-9">
           <h4>A: Income</h4>
         </div>
-        <div class="col-3 text-end">
-          <ul>
-            <li>
-              <h4 id="aTotal">900.00</h4>
-            </li>
-          </ul>
+        <div class="col-3"></div>
+        <!-- Input Display -->
+        <div class="list-item d-none"></div>
+        <!-- Input Name -->
+        <div class="col-7">
+          <input
+            class="form-control input-name"
+            type="text"
+            placeholder="Income name"
+            aria-label="default input example"
+          />
+        </div>
+        <!-- Input Amount -->
+        <div class="col-3">
+          <input
+            class="form-control input-amount"
+            type="text"
+            placeholder="Amount"
+            aria-label="default input example"
+          />
+        </div>
+        <!-- Add button -->
+        <div class="col-2">
+          <button type="submit" class="btn btn-primary" onsubmit="addToList()">
+            Add
+          </button>
         </div>
       </div>
-      <div class="row">
-        <div class="col-9">
-          <ol>
-            <li>Salary</li>
-            <li>Danielle payback</li>
-          </ol>
-        </div>
-        <div class="col-3 text-end">
-          <ul>
-            <li>500.00</li>
-            <li>200.00</li>
-          </ul>
-        </div>
-      </div>
-
       <div class="row">
         <div class="col-9">
           <h4>B: Investing and Saving</h4>
-        </div>
-        <div class="col-3 text-end">
-          <ul>
-            <li>
-              <h4 id="bTotal">180.00</h4>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-9">
-          <ol>
-            <li>Investing</li>
-            <li>Danielle troue</li>
-            <li>New Phone</li>
-          </ol>
-        </div>
-        <div class="col-3 text-end">
-          <ul>
-            <li>100.00</li>
-            <li>50.00</li>
-            <li>30.00</li>
-          </ul>
         </div>
       </div>
       <div class="row">
         <div class="col-9">
           <h4>C: Debt</h4>
         </div>
-        <div class="col-3 text-end">
-          <ul>
-            <li>
-              <h4 id="cTotal">200.00</h4>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-9">
-          <ol>
-            <li>Studyloan</li>
-          </ol>
-        </div>
-        <div class="col-3 text-end">
-          <ul>
-            <li>200.00</li>
-          </ul>
-        </div>
       </div>
       <div class="row">
         <div class="col-9">
           <h4>D: Expenses</h4>
-        </div>
-        <div class="col-3 text-end">
-          <ul>
-            <li>
-              <h4 id="dTotal">314.00</h4>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-9">
-          <ol>
-            <li>Food (€50/full week)</li>
-            <li>Bills</li>
-            <li>Jolandi troue</li>
-            <li>Make Up</li>
-          </ol>
-        </div>
-        <div class="col-3 text-end">
-          <ul>
-            <li>200.00</li>
-            <li>34.00</li>
-            <li>50.00</li>
-            <li>30.00</li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-7">
-          <h4>Left (A-B-C-D)</h4>
-        </div>
-        <div class="col-2">
-          <button type="submit" onclick="finalCalculation">Calculate</button>
-        </div>
-        <div class="col-3 text-end border-top border-3">
-          <ul>
-            <li>
-              <h4 id="leftTotal">60.00</h4>
-            </li>
-          </ul>
         </div>
       </div>
     </div>

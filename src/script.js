@@ -26,3 +26,26 @@ function finalCalculation() {
 
   //  leftAmount.innerHTML = `${}`;
 }
+
+// Create Budget
+function addToList() {
+  let inputName = document.querySelector(".input-name");
+  let inputAmount = document.querySelector(".input-amount");
+  let inputItem = document.querySelector(".input-item");
+
+  console.log(`${inputName.value}`);
+  console.log(`${inputAmount.value}`);
+
+  document.getElementsByClassName(".list-item").style.display = "block";
+  inputItem.innerHTML = `<div class="col-9">
+          <ol>
+            <li>${inputName.value}</li>
+                      </ol>
+        </div>
+        <div class="col-3 text-end">
+          <ul>
+            <li>${inputAmount.value}</li>
+            
+          </ul>
+        </div>`;
+}
