@@ -123,3 +123,9 @@ footer button {
   border: 3px solid var(--primary) !important;
   border-radius: 4px !important;
 }
+
+/* Create a Bucget styling 
+.list-item {
+  display: none;
+}
+*/

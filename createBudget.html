@@ -140,7 +140,19 @@
         </div>
         <div class="col-3"></div>
         <!-- Input Display -->
-        <div class="list-item d-none"></div>
+        <div class="list-item">
+          <div class="col-6">
+            <ol>
+              <li class="list-item-name previous-item-name"></li>
+            </ol>
+          </div>
+          <div class="col-2 text-end">
+            <ul>
+              <li class="list-item-amount previous-item-amount"></li>
+            </ul>
+          </div>
+          <div class="col-4"></div>
+        </div>
         <!-- Input Name -->
         <div class="col-7">
           <input
@@ -161,7 +173,7 @@
         </div>
         <!-- Add button -->
         <div class="col-2">
-          <button type="submit" class="btn btn-primary" onsubmit="addToList()">
+          <button type="submit" class="btn btn-primary" onclick="addToList()">
             Add
           </button>
         </div>
@@ -263,6 +275,18 @@
         </div>
       </div>
     </footer>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>||Working with elements||</title>
+</head>
+<body>
+  <div id="div1">The text above has been created dynamically.</div>
+</body>
+</html>
+
+
     <script src="/src/script.js"></script>
   </body>
 </html>
